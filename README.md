@@ -55,17 +55,14 @@
 > Because the values for this parameter are very vendor specific, we will list the legal values for this parameter under the resources for that particular vendor.
 
 # OAuth 2.0 Parameters for Security:
-> [!NOTE]
-> Generic Security
+
+## Generic Security
 
 ### nonce:
 - A random string of any construction to be used as an additional layer of security when requesting an id_token from OpenID Connect. This will be returned in the claims of the JWT which is the id_token, so that you can further validate the integrity of the received data.
 
 ### state:
 - A random alphanumeric string to use for CSRF protection as we initialize the flow using the Front-Channe (Browser URL Bar).
-
-> [!IMPORTANT]
-> PKCE Security
 
 ## PKCE Security
 
