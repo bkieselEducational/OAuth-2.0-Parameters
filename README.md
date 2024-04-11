@@ -11,6 +11,12 @@
 > [!TIP]
 > While the 'online' setting is considered 'default', most SDKs will actually set this value for you under the hood and they will likely set it to 'offline' so that you get a Refresh Token. If you have no use case for the Refresh Token, you may consider setting this explicitly yourself to 'online'.
 
+### client_id:
+- The id assigned to your application to access the OAuth API services.
+
+### client_secret:
+- The secret assigned to your application upon registration. It will be used at later stages of the OAuth flow to further validate your client.
+
 ### grant_type:
 
 * `authorization_code` - For authorization code grants (Access Token).
@@ -21,6 +27,16 @@
 
 * `refresh_token` - For refreshing an Access Token (using a Refresh Token)
 
+### prompt:
+
+* `consent` - This signals that the user authenticating to your app should be presented with the consent screen after successful login to verify the app in question.
+
+* `login` - This indicates that the user will need to login with the provider of the OAuth API.
+
+* `none` - Indicates that the vendor should not display authentication or consent pages. Use this only when you set id_token_hint and response_type=none.
+
+> [!IMPORTANT]
+> Note that the 3 values listed above are generic values that most OAuth APIs will recognize and honor, however each vendor may have it's own values that can be assigned here, for example the 'select_account' option offered by Google. Check the vendor's documentation if you are interested in more proprietary options!
 
 ### response_type:
 
