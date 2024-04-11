@@ -1,6 +1,6 @@
 # OAuth-2.0-Parameters
 
-**response_type**:
+<span style="font-size:0.5em;">response_type:</span>
 
 * `code` - tells the auth endpoint that we want to obtain an authorization code that we can exchange for an access token.
 
@@ -10,4 +10,4 @@
 
 * `token` - This indicates that we want an access token for an Implicit Grant.
 
-The background color is #ffffff for light mode and `#000000` for dark mode.
+
