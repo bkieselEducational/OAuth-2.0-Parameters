@@ -38,6 +38,9 @@
 > [!IMPORTANT]
 > Note that the 3 values listed above are generic values that most OAuth APIs will recognize and honor, however each vendor may have it's own values that can be assigned here, for example the 'select_account' option offered by Google. Check the vendor's documentation if you are interested in more proprietary options!
 
+### redirect_uri:
+- Arguably the most important parameter in the entire OAuth flow as it may be the only paramater that is sent with every request! This needs to match the endpoint that you registered with the OAuth API vendor for use as your 'Callback Endpoint'.
+
 ### response_type:
 
 * `code` - tells the auth endpoint that we want to obtain an authorization code that we can exchange for an access token.
