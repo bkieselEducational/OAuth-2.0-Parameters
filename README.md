@@ -32,3 +32,6 @@
 > [!IMPORTANT]
 > This parameter can take multiple values, so the following are also legal settings: `code token id_token` `code token` `code id_token` `token id_token`
 
+### scope:
+> [!NOTE]
+> Because the values for this parameter are very vendor specific, we will list the legal values for this parameter under the resources for that particular vendor.
