@@ -52,7 +52,7 @@
 > PKCE Security
 
 ### code_verifier:
-- A random string with a recommended variable length between 42-128 characters. 
+- A random string with a recommended variable length between 43-128 characters. 
 
 ### code_challenge:
 - The base64URL encoded version of the SHA256 hashed code_verifier
