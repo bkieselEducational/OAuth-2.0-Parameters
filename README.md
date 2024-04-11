@@ -26,6 +26,6 @@
 * `none` - The API will not return a code or an id token. This is use with id_token_hint only.
 
 * `token` - This indicates that we want an access token for an Implicit Grant.
-> [!WARNING]
+> [!IMPORTANT]
 > This parameter can take multiple values, so the following are also legal settings: `code token id_token` `code token` `code id_token` `token id_token`
 
