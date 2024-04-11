@@ -2,9 +2,12 @@
 
 ### access_type:
 
-* `online` - This is the default value (probably not the case for your SDK, though). It indicates that the application wants to access the user's data when they are present and interacting with the application. It may prompt the user to authenticate every time they use the application.
+* `online` - It indicates that the application wants to access the user's data when they are present and interacting with the application. It may prompt the user to authenticate every time they use the application.
 
-* `offline` - (Most SDKs will default this value to offline) Setting this value to offline indicates that the application wants access to the user's data wether they are active in the app or not. This tells the API that we want to obtain a Refresh Token in addition to the Access Token.
+* `offline` - Setting this value to offline indicates that the application wants access to the user's data wether they are active in the app or not. This tells the API that we want to obtain a Refresh Token in addition to the Access Token.
+
+> [!TIP]
+> While the online setting is considered 'default', most SDKs will actually set this value for you under the hood and they will likely set it to 'offline' so that you get a Refresh Token. If you have no use case for the Refresh Token, you may consider setting this explicitly yourself to 'online'.
 
 ### grant_type:
 
