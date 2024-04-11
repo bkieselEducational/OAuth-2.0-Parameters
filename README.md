@@ -1,5 +1,11 @@
 # OAuth-2.0-Parameters
 
+### access_type:
+
+* `online` - This is the default value (probably not the case for your SDK, though). It indicates that the application wants to access the user's data when they are present and interacting with the application. It may prompt the user to authenticate every time they use the application.
+
+* `offline` - (Most SDKs will default this value to offline) Setting this value to offline indicates that the application wants access to the user's data wether they are active in the app or not. This tells the API that we want to obtain a Refresh Token in addition to the Access Token.
+
 ### grant_type:
 
 * `authorization_code` - For authorization code grants (Access Token).
