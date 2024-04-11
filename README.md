@@ -1,5 +1,16 @@
 # OAuth-2.0-Parameters
 
+### grant_type:
+
+* `authorization_code` - For authorization code grants (Access Token).
+
+* `client_credentials` - For client credentials grant.
+
+* `password` - For the resource owner password crednetials grant.
+
+* `refresh_token` - For refreshing an Access Token (using a Refresh Token)
+
+
 ### response_type:
 
 * `code` - tells the auth endpoint that we want to obtain an authorization code that we can exchange for an access token.
