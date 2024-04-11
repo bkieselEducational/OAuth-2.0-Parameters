@@ -67,6 +67,8 @@
 > [!IMPORTANT]
 > PKCE Security
 
+## PKCE Security
+
 ### code_verifier:
 - A random string with a recommended variable length between 43-128 characters. 
 
