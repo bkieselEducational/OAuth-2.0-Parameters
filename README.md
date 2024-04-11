@@ -1,6 +1,6 @@
 # OAuth-2.0-Parameters
 
-<span style="font-size:2.0em;">response_type:</span>
+### response_type:
 
 * `code` - tells the auth endpoint that we want to obtain an authorization code that we can exchange for an access token.
 
